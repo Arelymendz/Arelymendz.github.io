@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Malla Ingeniería Industrial</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Malla de Ingeniería Industrial</h1>
+    <nav>
+      <button onclick="mostrarSeccion('malla')">📘 Malla</button>
+      <button onclick="mostrarSeccion('herramientas')">🛠️ Herramientas</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Sección de la malla -->
+    <section id="malla" class="seccion">
+      <div id="malla-contenedor"></div>
+      <div id="detalle-materia" class="modal">
+        <button onclick="cerrarModal()">X</button>
+        <h2 id="detalle-nombre"></h2>
+        <p><strong>Código:</strong> <span id="detalle-codigo"></span></p>
+        <p><strong>U.V:</strong> <span id="detalle-uv"></span></p>
+        <p><strong>Área:</strong> <span id="detalle-area"></span></p>
+        <p><strong>Requisitos:</strong> <span id="detalle-requisitos"></span></p>
+        <p><strong>Abre a:</strong> <span id="detalle-abre"></span></p>
+      </div>
+    </section>
+
+    <!-- Sección de herramientas -->
+    <section id="herramientas" class="seccion oculto">
+      <h2>🧮 Calculadora de Prioridades</h2>
+      <div id="calculadora-prioridades"></div>
+
+      <h2>📋 Seguimiento de Actividades por Materia</h2>
+      <div id="actividades"></div>
+
+      <h3>🎯 CUM Estimado: <span id="cum">0.00</span></h3>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Malla Interactiva - Ingeniería Industrial</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
