@@ -1,0 +1,57 @@
+[
+  { "codigo": "IVI135", "nombre": "Investigación en ingeniería", "uv": 4, "area": "Diseños de ingeniería", "abre": ["FIR135"], "requisitos": [], "semestre": 1, "anio": 1 },
+  { "codigo": "MAT135", "nombre": "Matemática I", "uv": 4, "area": "Matemáticas", "abre": ["MAT235", "FIR135"], "requisitos": [], "semestre": 1, "anio": 1 },
+  { "codigo": "PYR135", "nombre": "Psicología y relaciones sociolaborales", "uv": 4, "area": "Ciencias básicas", "abre": ["RES135"], "requisitos": [], "semestre": 1, "anio": 1 },
+  { "codigo": "DIT135", "nombre": "Dibujo técnico I", "uv": 3, "area": "Diseños de ingeniería", "abre": ["DIT235"], "requisitos": [], "semestre": 1, "anio": 1 },
+  { "codigo": "III135", "nombre": "Introducción a la ingeniería Industrial", "uv": 4, "area": "Diseños de ingeniería", "abre": ["OFI135", "LYA135"], "requisitos": [], "semestre": 1, "anio": 1 },
+
+  { "codigo": "FIR135", "nombre": "Física I", "uv": 4, "area": "Ciencias básicas", "abre": ["FIR235", "SDS135"], "requisitos": ["IVI135", "MAT135"], "semestre": 2, "anio": 1 },
+  { "codigo": "MAT235", "nombre": "Matemática II", "uv": 4, "area": "Matemáticas", "abre": ["MAT335", "FIR235", "SDS135"], "requisitos": ["MAT135"], "semestre": 2, "anio": 1 },
+  { "codigo": "RES135", "nombre": "Responsabilidad de la ingeniería en la economía y la sociedad", "uv": 4, "area": "Ciencias básicas", "abre": ["FAD135"], "requisitos": ["PYR135"], "semestre": 2, "anio": 1 },
+  { "codigo": "QTR135", "nombre": "Química técnica", "uv": 4, "area": "Ciencias básicas", "abre": ["TIR135"], "requisitos": [], "semestre": 2, "anio": 1 },
+  { "codigo": "DIT235", "nombre": "Dibujo técnico II", "uv": 4, "area": "Diseños de ingeniería", "abre": ["TIR135"], "requisitos": ["DIT135"], "semestre": 2, "anio": 1 },
+
+  { "codigo": "FIR235", "nombre": "Física II", "uv": 4, "area": "Ciencias básicas", "abre": ["FIR335", "DIN135", "MEF135"], "requisitos": ["FIR135", "MAT235"], "semestre": 3, "anio": 2 },
+  { "codigo": "MAT335", "nombre": "Matemática III", "uv": 4, "area": "Matemáticas", "abre": ["FIR335", "MAT435", "FDE135", "PYE135"], "requisitos": ["MAT235"], "semestre": 3, "anio": 2 },
+  { "codigo": "OFI135", "nombre": "Ofimática y software para ingeniería industrial", "uv": 4, "area": "Cursos complementarios", "abre": ["IEC135"], "requisitos": ["III135"], "semestre": 3, "anio": 2 },
+  { "codigo": "LYA135", "nombre": "Lógica y algoritmos", "uv": 4, "area": "Cursos complementarios", "abre": ["PYE135"], "requisitos": ["III135"], "semestre": 3, "anio": 2 },
+  { "codigo": "SDS135", "nombre": "Sólidos deformables", "uv": 4, "area": "Ciencias de la ingeniería", "abre": ["DIN135", "TIR235"], "requisitos": ["FIR135", "MAT235"], "semestre": 3, "anio": 2 },
+
+  { "codigo": "FIR335", "nombre": "Física III", "uv": 4, "area": "Ciencias básicas", "abre": ["EFE135"], "requisitos": ["FIR235", "MAT335"], "semestre": 4, "anio": 2 },
+  { "codigo": "MAT435", "nombre": "Matemática IV", "uv": 4, "area": "Matemáticas", "abre": ["MEF135"], "requisitos": ["MAT335"], "semestre": 4, "anio": 2 },
+  { "codigo": "DIN135", "nombre": "Dinámica", "uv": 4, "area": "Ciencias de la ingeniería", "abre": ["EFE135"], "requisitos": ["FIR235", "SDS135"], "semestre": 4, "anio": 2 },
+  { "codigo": "FAD135", "nombre": "Fundamentos de administración", "uv": 4, "area": "Diseños de ingeniería", "abre": ["GCA135"], "requisitos": ["RES135"], "semestre": 4, "anio": 2 },
+  { "codigo": "TIR135", "nombre": "Tecnología industrial I", "uv": 4, "area": "Ciencias de la ingeniería", "abre": ["TIR235"], "requisitos": ["QTR135", "DIT235"], "semestre": 4, "anio": 2 },
+
+  { "codigo": "MEF135", "nombre": "Mecánica de los fluidos", "uv": 4, "area": "Ciencias de la ingeniería", "abre": ["SSO135"], "requisitos": ["FIR235", "MAT435"], "semestre": 5, "anio": 3 },
+  { "codigo": "FDE135", "nombre": "Fundamentos de economía", "uv": 4, "area": "Cursos complementarios", "abre": ["IEC135"], "requisitos": ["MAT335"], "semestre": 5, "anio": 3 },
+  { "codigo": "EFE135", "nombre": "Eficiencia energética", "uv": 4, "area": "Ciencias de la ingeniería", "abre": ["TIR335"], "requisitos": ["FIR335", "DIN135"], "semestre": 5, "anio": 3 },
+  { "codigo": "PYE135", "nombre": "Probabilidad y estadística", "uv": 4, "area": "Matemáticas", "abre": ["IOP135", "GCA135"], "requisitos": ["MAT335", "LYA135"], "semestre": 5, "anio": 3 },
+  { "codigo": "TIR235", "nombre": "Tecnología industrial II", "uv": 4, "area": "Ciencias de la ingeniería", "abre": ["TIR335", "SSO135"], "requisitos": ["SDS135", "TIR135"], "semestre": 5, "anio": 3 },
+
+  { "codigo": "IEC135", "nombre": "Ingeniería económica", "uv": 4, "area": "Ciencias de la ingeniería", "abre": ["CIC135", "IOP235"], "requisitos": ["FDE135", "OFI135"], "semestre": 6, "anio": 3 },
+  { "codigo": "IOP135", "nombre": "Investigación de operaciones I", "uv": 4, "area": "Ciencias de la ingeniería", "abre": ["IOP235"], "requisitos": ["PYE135"], "semestre": 6, "anio": 3 },
+  { "codigo": "GCA135", "nombre": "Gestión de la calidad", "uv": 4, "area": "Diseños de ingeniería", "abre": ["ADO135"], "requisitos": ["FAD135", "PYE135"], "semestre": 6, "anio": 3 },
+  { "codigo": "SSO135", "nombre": "Seguridad y salud ocupacional", "uv": 4, "area": "Diseños de ingeniería", "abre": ["GCH135"], "requisitos": ["MEF135", "TIR235"], "semestre": 6, "anio": 3 },
+  { "codigo": "TIR335", "nombre": "Tecnología industrial III", "uv": 4, "area": "Ciencias de la ingeniería", "abre": ["IMT135"], "requisitos": ["EFE135", "TIR235"], "semestre": 6, "anio": 3 },
+
+  { "codigo": "GCH135", "nombre": "Gestión del capital humano", "uv": 4, "area": "Diseños de ingeniería", "abre": [], "requisitos": ["SSO135"], "semestre": 7, "anio": 4 },
+  { "codigo": "CIC135", "nombre": "Contabilidad y costos", "uv": 4, "area": "Cursos complementarios", "abre": ["ADF135"], "requisitos": ["IEC135"], "semestre": 7, "anio": 4 },
+  { "codigo": "IOP235", "nombre": "Investigación de operaciones II", "uv": 4, "area": "Ciencias de la ingeniería", "abre": ["GCS135"], "requisitos": ["IOP135", "IEC135"], "semestre": 7, "anio": 4 },
+  { "codigo": "ADO135", "nombre": "Análisis y diseño organizacional", "uv": 4, "area": "Diseños de ingeniería", "abre": ["MER135"], "requisitos": ["GCA135"], "semestre": 7, "anio": 4 },
+  { "codigo": "IMT135", "nombre": "Ingeniería de métodos", "uv": 4, "area": "Diseños de ingeniería", "abre": ["GCS135", "DIP135", "MMT135"], "requisitos": ["TIR335"], "semestre": 7, "anio": 4 },
+
+  { "codigo": "MER135", "nombre": "Mercadeo", "uv": 4, "area": "Cursos complementarios", "abre": ["FEP135"], "requisitos": ["ADO135"], "semestre": 8, "anio": 4 },
+  { "codigo": "ADF135", "nombre": "Administración financiera", "uv": 4, "area": "Cursos complementarios", "abre": ["FEP135"], "requisitos": ["CIC135"], "semestre": 8, "anio": 4 },
+  { "codigo": "GCS135", "nombre": "Gestión de la cadena de suministros", "uv": 4, "area": "Diseños de ingeniería", "abre": ["GPR135"], "requisitos": ["IOP235", "IMT135"], "semestre": 8, "anio": 4 },
+  { "codigo": "DIP135", "nombre": "Distribución en plantas", "uv": 4, "area": "Diseños de ingeniería", "abre": ["GPR135", "FEP135"], "requisitos": ["IMT135"], "semestre": 8, "anio": 4 },
+  { "codigo": "MMT135", "nombre": "Medidas del trabajo", "uv": 4, "area": "Diseños de ingeniería", "abre": [], "requisitos": ["IMT135"], "semestre": 8, "anio": 4 },
+
+  { "codigo": "GPR135", "nombre": "Gestión de la producción", "uv": 4, "area": "Diseños de ingeniería", "abre": ["PTG135", "GEM135"], "requisitos": ["GCS135", "DIP135"], "semestre": 9, "anio": 5 },
+  { "codigo": "LPR135", "nombre": "Legislación profesional", "uv": 4, "area": "Cursos complementarios", "abre": ["PTG135", "GEM135"], "requisitos": [], "semestre": 9, "anio": 5 },
+  { "codigo": "FEP135", "nombre": "Formulación y evaluación de proyectos", "uv": 4, "area": "Diseños de ingeniería", "abre": ["PTG135", "GIP135"], "requisitos": ["ADF135", "MER135", "DIP135"], "semestre": 9, "anio": 5 },
+
+  { "codigo": "GEM135", "nombre": "Gestión empresarial", "uv": 4, "area": "Diseños de ingeniería", "abre": [], "requisitos": ["GPR135", "LPR135"], "semestre": 10, "anio": 5 },
+  { "codigo": "PTG135", "nombre": "Protocolo de trabajo de graduación", "uv": 4, "area": "Diseños de ingeniería", "abre": [], "requisitos": ["FEP135", "LPR135", "GPR135"], "semestre": 10, "anio": 5 },
+  { "codigo": "GIP135", "nombre": "Gestión de la implantación de proyectos", "uv": 4, "area": "Diseños de ingeniería", "abre": [], "requisitos": ["FEP135"], "semestre": 10, "anio": 5 }
+]
